@@ -5,7 +5,7 @@ import Footer from "@/components/organisms/Footer"
 
 export default function Layout() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+<div className="min-h-screen bg-white">
       <Header />
       <main>
         <Outlet />

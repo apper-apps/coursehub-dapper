@@ -20,15 +20,14 @@ export default function ArticleCard({ article }) {
   }
 
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+<div className="bg-white rounded-lg border border-secondary-100 overflow-hidden hover:border-secondary-200 transition-colors group">
       {article.featuredImage && (
         <div className="relative h-48 overflow-hidden">
           <img
             src={article.featuredImage}
             alt={article.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
         </div>
       )}
       
@@ -38,8 +37,8 @@ export default function ArticleCard({ article }) {
           <span>{formatDate(article.publishDate)}</span>
         </div>
         
-        <h3 className="text-xl font-bold text-secondary-900 mb-3 group-hover:text-primary-600 transition-colors">
-          <Link to={`/article/${createSlug(article.title)}`}>
+        <h3 className="text-xl font-semibold text-secondary-900 mb-3">
+          <Link to={`/article/${createSlug(article.title)}`} className="hover:text-primary-600 transition-colors">
             {article.title}
           </Link>
         </h3>
@@ -50,7 +49,7 @@ export default function ArticleCard({ article }) {
         
         <Link
           to={`/article/${createSlug(article.title)}`}
-          className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium"
+          className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-normal text-sm"
         >
           Read More
           <ApperIcon name="ArrowRight" className="w-4 h-4" />

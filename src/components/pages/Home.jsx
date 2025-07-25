@@ -39,31 +39,30 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-accent-50"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section className="py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold text-secondary-900 mb-6">
+            <h1 className="text-4xl lg:text-6xl font-semibold text-secondary-900 mb-6">
               Discover Amazing
-              <span className="gradient-text block">Domestika Courses</span>
+              <span className="text-primary-600 block">Domestika Courses</span>
             </h1>
-            <p className="text-xl text-secondary-600 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-secondary-600 mb-12 max-w-2xl mx-auto leading-relaxed">
               Unlock your creative potential with expert-led online courses. From design and illustration 
               to photography and crafts, find the perfect course to advance your skills.
             </p>
-            <AffiliateButton className="mb-8" />
+            <AffiliateButton />
           </div>
         </div>
       </section>
 
       {/* Articles Section */}
-      <section className="py-16">
+<section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-secondary-900 mb-4">
-              Latest Articles & Course Reviews
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-medium text-secondary-900 mb-6">
+              Latest Articles
             </h2>
-            <p className="text-lg text-secondary-600 max-w-2xl mx-auto">
+            <p className="text-lg text-secondary-600 max-w-2xl mx-auto leading-relaxed">
               Stay updated with the latest course reviews, learning tips, and creative insights 
               to help you choose the perfect Domestika course.
             </p>
@@ -88,20 +87,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-primary-500 to-accent-500">
+{/* CTA Section */}
+      <section className="py-20 bg-secondary-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl lg:text-4xl font-medium text-secondary-900 mb-6">
             Ready to Start Learning?
           </h2>
-          <p className="text-xl text-white/90 mb-8">
+          <p className="text-xl text-secondary-600 mb-12 leading-relaxed">
             Join thousands of creatives and start your journey with Domestika today. 
             Explore courses in design, illustration, photography, and more.
           </p>
-          <AffiliateButton className="bg-white text-primary-600 hover:bg-gray-50" />
+          <AffiliateButton />
         </div>
       </section>
-
       {/* Fixed Affiliate Button */}
       <AffiliateButton fixed />
     </div>

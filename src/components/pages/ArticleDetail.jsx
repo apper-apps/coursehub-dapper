@@ -61,10 +61,10 @@ export default function ArticleDetail() {
   return (
     <div className="min-h-screen">
       {/* Breadcrumb */}
-      <div className="bg-white border-b border-secondary-200">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<div className="bg-white border-b border-secondary-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <nav className="flex items-center space-x-2 text-sm">
-            <Link to="/" className="text-secondary-500 hover:text-primary-600">
+            <Link to="/" className="text-secondary-500 hover:text-secondary-900">
               Home
             </Link>
             <ApperIcon name="ChevronRight" className="w-4 h-4 text-secondary-400" />
@@ -76,13 +76,13 @@ export default function ArticleDetail() {
       <article className="py-8 lg:py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Article Header */}
-          <header className="mb-8">
-            <div className="flex items-center gap-2 text-secondary-500 mb-4">
+<header className="mb-12">
+            <div className="flex items-center gap-2 text-secondary-500 mb-6">
               <ApperIcon name="Calendar" className="w-4 h-4" />
               <time>{formatDate(article.publishDate)}</time>
             </div>
             
-            <h1 className="text-3xl lg:text-5xl font-bold text-secondary-900 mb-6">
+            <h1 className="text-3xl lg:text-5xl font-medium text-secondary-900 mb-6">
               {article.title}
             </h1>
             
@@ -94,12 +94,12 @@ export default function ArticleDetail() {
           </header>
 
           {/* Featured Image */}
-          {article.featuredImage && (
-            <div className="mb-8">
+{article.featuredImage && (
+            <div className="mb-12">
               <img
                 src={article.featuredImage}
                 alt={article.title}
-                className="w-full h-auto rounded-xl shadow-lg"
+                className="w-full h-auto rounded-lg"
               />
             </div>
           )}
@@ -113,16 +113,14 @@ export default function ArticleDetail() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-12 p-8 bg-gradient-to-r from-primary-50 to-accent-50 rounded-xl">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-secondary-900 mb-4">
-                Ready to Start Learning?
-              </h3>
-              <p className="text-secondary-600 mb-6">
-                Discover amazing courses and unlock your creative potential with Domestika.
-              </p>
-              <AffiliateButton />
-            </div>
+<div className="mt-16 p-8 bg-secondary-50 rounded-lg text-center">
+            <h3 className="text-2xl font-medium text-secondary-900 mb-4">
+              Ready to Start Learning?
+            </h3>
+            <p className="text-secondary-600 mb-8">
+              Discover amazing courses and unlock your creative potential with Domestika.
+            </p>
+            <AffiliateButton />
           </div>
 
           {/* Back to Blog */}
