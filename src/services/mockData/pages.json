@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 1,
+    "slug": "about",
+    "title": "About Us",
+    "content": "",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "Id": 2,
+    "slug": "contact",
+    "title": "Contact",
+    "content": "",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "Id": 3,
+    "slug": "privacy",
+    "title": "Privacy Policy",
+    "content": "",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  }
+]
